@@ -4,8 +4,8 @@ class CreateSupportRequests < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :email
       t.text :description
+      t.text :response
       t.string :status, default: "new", null: false
-
       t.timestamps
     end
   end
