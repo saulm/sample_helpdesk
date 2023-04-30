@@ -89,6 +89,8 @@ GEM
     debug (1.7.2)
       irb (>= 1.5.0)
       reline (>= 0.3.1)
+    email_validator (2.2.4)
+      activemodel
     erubi (1.12.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
@@ -172,6 +174,9 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    simple_form (5.2.0)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -215,12 +220,14 @@ DEPENDENCIES
   capybara
   cssbundling-rails
   debug
+  email_validator
   jbuilder
   jsbundling-rails
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
   redis (~> 4.0)
   selenium-webdriver
+  simple_form
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails

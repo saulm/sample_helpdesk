@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  root :to => redirect('/support_requests/new')
+  resources :support_requests
 end

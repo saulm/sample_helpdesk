@@ -1,0 +1,19 @@
+
+<div class="container-md">
+  <h1>Support Requests</h1>
+  <% flash.each do |type, msg| %>
+    <div class="alert alert-success" role="alert">
+      <%= msg %>
+    </div>
+  <% end %>
+
+  <div class="row">
+    <%= simple_form_for @support_request do |f| %>
+      <%= f.input :name, label: 'Your name please', error: 'name is required' %>
+      <%= f.input :email, placeholder: 'user@domain.com', error: 'Must be a valid email address' %>
+      <%= f.input :description, placeholder: 'A meaningful description of the error', error: 'description is required' %>
+      
+      <%= f.button :submit, class: "btn-primary" %>
+    <% end %>
+  </div>
+</div>
