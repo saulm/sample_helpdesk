@@ -10,7 +10,7 @@ class SupportRequestsController < ApplicationController
       flash[:notice] = "Request created successfully"
       redirect_to action: "new"
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
